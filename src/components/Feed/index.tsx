@@ -27,12 +27,6 @@ export const Feed: React.FC = () => {
         media_type: "IMAGE",
       },
       {
-        id: "18007111100070032",
-        permalink: "https://www.instagram.com/reel/CySdYLEsAny/",
-        timestamp: "2023-10-12T06:18:36+0000",
-        media_type: "VIDEO",
-      },
-      {
         id: "17993720504081269",
         media_url:
           "https://scontent-ssn1-1.cdninstagram.com/o1/v/t16/f1/m82/66424F2BEEEC6799725F513F7A94E581_video_dashinit.mp4?efg=eyJ2ZW5jb2RlX3RhZyI6InZ0c192b2RfdXJsZ2VuLmNsaXBzLnVua25vd24tQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=111&vs=1302562707068638_3503905121&_nc_vs=HBksFQIYT2lnX3hwdl9yZWVsc19wZXJtYW5lbnRfcHJvZC82NjQyNEYyQkVFRUM2Nzk5NzI1RjUxM0Y3QTk0RTU4MV92aWRlb19kYXNoaW5pdC5tcDQVAALIAQAVAhg6cGFzc3Rocm91Z2hfZXZlcnN0b3JlL0dMZEVGaGZyUUprM3dvQUNBRFBHTXJiWHoyQjRicV9FQUFBRhUCAsgBACgAGAAbAYgHdXNlX29pbAExFQAAJpLl1YXg%2FoBAFQIoAkMzLBdAHVT987ZFohgSZGFzaF9iYXNlbGluZV8xX3YxEQB1AAA%3D&ccb=9-4&oh=00_AfB0_lenVTSpftX0Ptxy7FZ-Amb74j7wPUsIxvqfBH0-Kw&oe=652981E5&_nc_sid=1d576d&_nc_rid=790217f8b1",
@@ -81,12 +75,6 @@ export const Feed: React.FC = () => {
         media_type: "IMAGE",
       },
       {
-        id: "17898740069864739",
-        permalink: "https://www.instagram.com/p/CySYZEWOWQa/",
-        timestamp: "2023-10-12T05:34:39+0000",
-        media_type: "CAROUSEL_ALBUM",
-      },
-      {
         id: "17929669070773060",
         media_url:
           "https://scontent-ssn1-1.cdninstagram.com/v/t39.30808-6/387785832_738131074996745_4837558370036063113_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c4dd86&_nc_ohc=uqGrI9hUlzgAX_9u9rz&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AEoDcc0EAAAA&oh=00_AfDvd0VFIZIUMtF2cxRTxvNBQyUOKGLIPfCs_p9DuUhhgg&oe=652BEE93",
@@ -127,24 +115,12 @@ export const Feed: React.FC = () => {
         media_type: "IMAGE",
       },
       {
-        id: "18033656989545850",
-        permalink: "https://www.instagram.com/p/CySOvxvsJXo/",
-        timestamp: "2023-10-12T04:10:22+0000",
-        media_type: "CAROUSEL_ALBUM",
-      },
-      {
         id: "18056043208465465",
         media_url:
           "https://scontent-ssn1-1.cdninstagram.com/o1/v/t16/f1/m82/9A4D4F1F7403EC21D40E0A28A426E697_video_dashinit.mp4?efg=eyJ2ZW5jb2RlX3RhZyI6InZ0c192b2RfdXJsZ2VuLmNsaXBzLnVua25vd24tQzMuNDgwLmRhc2hfYmFzZWxpbmVfMV92MSJ9&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=107&vs=1081701086326454_1499219547&_nc_vs=HBksFQIYT2lnX3hwdl9yZWVsc19wZXJtYW5lbnRfcHJvZC85QTRENEYxRjc0MDNFQzIxRDQwRTBBMjhBNDI2RTY5N192aWRlb19kYXNoaW5pdC5tcDQVAALIAQAVAhg6cGFzc3Rocm91Z2hfZXZlcnN0b3JlL0dNU1pGaGVJczNTcnViTURBQTlmRnRDWDdwcHNicV9FQUFBRhUCAsgBACgAGAAbAYgHdXNlX29pbAExFQAAJpbD%2FqDirqdBFQIoAkMzLBdANT87ZFocrBgSZGFzaF9iYXNlbGluZV8xX3YxEQB1AAA%3D&ccb=9-4&oh=00_AfAdRuTJssCmUuAS8PSdtJ0Jig90KDZUX82L9nLj1wyO4A&oe=65296823&_nc_sid=1d576d&_nc_rid=3d50f060ba",
         permalink: "https://www.instagram.com/reel/CySNXb2vloq/",
         timestamp: "2023-10-12T04:08:08+0000",
         media_type: "VIDEO",
-      },
-      {
-        id: "18063507247444696",
-        permalink: "https://www.instagram.com/p/CySNEBMx6cA/",
-        timestamp: "2023-10-12T03:55:39+0000",
-        media_type: "CAROUSEL_ALBUM",
       },
       {
         id: "18264888121161838",
@@ -163,36 +139,12 @@ export const Feed: React.FC = () => {
         media_type: "VIDEO",
       },
       {
-        id: "17973387188409780",
-        permalink: "https://www.instagram.com/reel/CySKIFMvrAA/",
-        timestamp: "2023-10-12T03:30:28+0000",
-        media_type: "VIDEO",
-      },
-      {
         id: "18013884703907325",
         media_url:
           "https://scontent-ssn1-1.cdninstagram.com/v/t51.29350-15/387708643_1030552997987132_6595477889726221252_n.heic?stp=dst-jpg&_nc_cat=110&ccb=1-7&_nc_sid=c4dd86&_nc_ohc=cv8pXsODl98AX_nbnvL&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AEoDcc0EAAAA&oh=00_AfCaoE6dDpPlh6266Nz4q_IjlH07uuvPBmcfpLsmagXgRQ&oe=652BFD42",
         permalink: "https://www.instagram.com/p/CySJz1Yu2tx/",
         timestamp: "2023-10-12T03:27:14+0000",
         media_type: "IMAGE",
-      },
-      {
-        id: "18012148768782157",
-        permalink: "https://www.instagram.com/p/CySIWAVPxhj/",
-        timestamp: "2023-10-12T03:14:25+0000",
-        media_type: "CAROUSEL_ALBUM",
-      },
-      {
-        id: "18016954954877488",
-        permalink: "https://www.instagram.com/p/CySDgcHy32b/",
-        timestamp: "2023-10-12T02:32:09+0000",
-        media_type: "CAROUSEL_ALBUM",
-      },
-      {
-        id: "18304109032188181",
-        permalink: "https://www.instagram.com/reel/CySCKTwu8P1/",
-        timestamp: "2023-10-12T02:20:39+0000",
-        media_type: "VIDEO",
       },
       {
         id: "17999946293159254",
@@ -331,24 +283,12 @@ export const Feed: React.FC = () => {
         media_type: "VIDEO",
       },
       {
-        id: "18011189002937996",
-        permalink: "https://www.instagram.com/p/CySAY_3sUst/",
-        timestamp: "2023-10-12T02:04:55+0000",
-        media_type: "CAROUSEL_ALBUM",
-      },
-      {
         id: "17911867808753406",
         media_url:
           "https://scontent-ssn1-1.cdninstagram.com/v/t51.29350-15/387779423_6597534703661030_298099075576326420_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c4dd86&_nc_ohc=SWBQLsN3-m8AX9xMbeD&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AEoDcc0EAAAA&oh=00_AfDojmrSiTkrYuQR5whvXZQRJnbI9Oshzj6AKYoSPu5Twg&oe=652D727B",
         permalink: "https://www.instagram.com/p/CyR_ERdotM_/",
         timestamp: "2023-10-12T01:53:21+0000",
         media_type: "IMAGE",
-      },
-      {
-        id: "18033399034591122",
-        permalink: "https://www.instagram.com/p/CyR-s3ghZWW/",
-        timestamp: "2023-10-12T01:50:09+0000",
-        media_type: "CAROUSEL_ALBUM",
       },
       {
         id: "17916610886804379",
@@ -367,24 +307,12 @@ export const Feed: React.FC = () => {
         media_type: "IMAGE",
       },
       {
-        id: "18016001080889353",
-        permalink: "https://www.instagram.com/p/CyR83oeOqAi/",
-        timestamp: "2023-10-12T01:34:09+0000",
-        media_type: "CAROUSEL_ALBUM",
-      },
-      {
         id: "17998537673505389",
         media_url:
           "https://scontent-ssn1-1.cdninstagram.com/v/t51.29350-15/387772050_1748942092255251_433247760356551439_n.heic?stp=dst-jpg&_nc_cat=101&ccb=1-7&_nc_sid=c4dd86&_nc_ohc=HrBIORJCgYQAX_r9i9F&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AEoDcc0EAAAA&oh=00_AfC2AJPUZJsxjZ0xvDM0m_AkwzZm-yjYDDPR_SB3sVArDQ&oe=652C270F",
         permalink: "https://www.instagram.com/p/CyR6x8Gx5xY/",
         timestamp: "2023-10-12T01:15:54+0000",
         media_type: "IMAGE",
-      },
-      {
-        id: "18007832320989456",
-        permalink: "https://www.instagram.com/p/CyRf8qzJJZc/",
-        timestamp: "2023-10-11T21:21:26+0000",
-        media_type: "CAROUSEL_ALBUM",
       },
     ],
     paging: {
