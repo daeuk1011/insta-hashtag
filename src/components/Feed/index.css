@@ -1,0 +1,11 @@
+.feed-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 16px;
+  column-gap: 20px;
+  justify-items: center;
+}
+
+.feed-item {
+  text-align: center; /* 내부 콘텐츠 가운데 정렬 */
+}
