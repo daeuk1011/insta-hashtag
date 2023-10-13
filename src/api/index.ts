@@ -1,19 +1,23 @@
 import axios from "axios";
 
 const accessToken =
-  "EAAEyN36dwYkBO1dqDGydggx97iModAo9UbL5jbXdLQAvLDDAAEEqBywecZBca8cnt19vykNefrAYpIl2LhhuF9t8blVn0TngQ5qA8CUayozuYPE9CjH4EAAEyN36dwYkBO28V2DfpedqDT2sb4wi5PDTCtAvjquj0e4OqJ6IPmIYx38BC4EfJ4b7FAZC6DrTsCUDrsbhoPPs72m6o7fiCKko37SjD04BZC85mouXkvVnBcauTQH0OfDf99sKcSSZAnNQtn5KVB0ZCdtTPIdgXiaTv8fLyZCok3VIBpmdjpJPu8ERw94XZAZCsqcA7hP4z0ZCJF84uxgZDZD9ZCQJiSYfO2ZBUgCufJuTtn8nT6WyrnACoLhZC7eWsOS4lpro3xQCXsNgPbBsTNCXz4E";
+  "EAAEyN36dwYkBO80e0xQ7VOCJ8ppcPBYuaEqsU5xMeDyhtvB2BPzZB01M9n9PsHJIDgZBlvlBDUmRPrp8j5d78y4X8AiRtQpb3QgVtpzU0kFpRZAeLaHqa6e3HUv1ZCZAkLcGNIerrb8gAxSxZAZCWavw7QEf8XJVi5snZAP2CltycE0dSwrlWfryOs0DxtJhseXKXPTEypOlMSAIXUu1okxCn6aPZBzrS";
 
 const userId = "17841414784975563";
 
 const API_PREFIX = {
-  BASE_URL: "https://graph.facebook.com/v18.0",
+  BASE_URL: "https://graph.facebook.com",
   SEARCH_HASHTAG: `/ig_hashtag_search?user_id=${userId}`,
   GET_HASHTAG_TOP_MEDIA: `/${userId}`,
+  INSTAGRAM_URL: "https://www.instagram.com",
 };
 
 export const instance = axios.create({
   baseURL: API_PREFIX.BASE_URL,
-  //   withCredentials: true,
+});
+
+export const instagramInstance = axios.create({
+  baseURL: API_PREFIX.INSTAGRAM_URL,
 });
 
 export interface FeedData {
@@ -25,7 +29,7 @@ export interface FeedData {
 }
 
 const searchHashtag = async (q: string): Promise<string> => {
-  const { data } = await instance.get(`/ig_hashtag_search?user_id=${userId}&q=${q}&access_token=${accessToken}`);
+  const { data } = await instance.get(`/v18.0/ig_hashtag_search?user_id=${userId}&q=${q}&access_token=${accessToken}`);
   return data.data[0].id;
 };
 
@@ -34,9 +38,17 @@ const searchFeedByHashtagId = async (
   searchOption: "recent_media" | "top_media"
 ): Promise<FeedData[]> => {
   const { data } = await instance.get(
-    `/${hashtagId}/${searchOption}?user_id=${userId}&access_token=${accessToken}&fields=id,media_type,media_url,permalink,timestamp&limit=50`
+    `/v18.0/${hashtagId}/${searchOption}?user_id=${userId}&access_token=${accessToken}&fields=id,media_type,media_url,permalink,timestamp&limit=50`
   );
   return data.data;
+};
+
+export const getSearchListFeed = async (searchText: string) => {
+  const { data } = await instagramInstance.get(
+    `/api/v1/web/search/topsearch/?context=blended&include_reel=true&query=%23${searchText}&rank_token=1&search_surface=web_top_search`
+  );
+  console.log(data);
+  return data;
 };
 
 export const getSearchFeed = async (q: string, searchOption: "recent_media" | "top_media") => {

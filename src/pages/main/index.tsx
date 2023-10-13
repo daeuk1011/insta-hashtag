@@ -3,10 +3,14 @@ import "./index.css";
 import reactLogo from "./../../assets/instagram.svg";
 import omtLabsLogo from "./../../assets/omtlabs.svg";
 import { useNavigate } from "react-router-dom";
+import { useSearchList } from "../../hooks/api";
 
 export const MainPage: React.FC = () => {
   const navigate = useNavigate();
   const [searchText, setSearchText] = useState<string>("");
+  const { data } = useSearchList(searchText);
+
+  console.log(data);
 
   const handleSearchButton = async (searchTextProps: string) => {
     navigate("feed", {
@@ -20,72 +24,72 @@ export const MainPage: React.FC = () => {
     if (e.key === "Enter") handleSearchButton(searchText);
   };
 
-  const handleSearchList = async (searchTextProps: string) => {
-    await handleSearchButton(searchTextProps);
-  };
+  //   const handleSearchList = async (searchTextProps: string) => {
+  //     await handleSearchButton(searchTextProps);
+  //   };
 
-  const data = [
-    {
-      position: 0,
-      hashtag: {
-        name: "성수동맛집",
-        id: 17841557776105378,
-        media_count: 812269,
-        use_default_avatar: true,
-        search_result_subtitle: "게시물 81.2만",
-      },
-    },
-    {
-      position: 1,
-      hashtag: {
-        name: "성수맛집",
-        id: 17843798476031726,
-        media_count: 717947,
-        use_default_avatar: true,
-        search_result_subtitle: "게시물 71.7만",
-      },
-    },
-    {
-      position: 2,
-      hashtag: {
-        name: "성수동카페",
-        id: 17843645044031416,
-        media_count: 1146282,
-        use_default_avatar: true,
-        search_result_subtitle: "게시물 114만",
-      },
-    },
-    {
-      position: 3,
-      hashtag: {
-        name: "성신여대맛집",
-        id: 17841564262085452,
-        media_count: 297709,
-        use_default_avatar: true,
-        search_result_subtitle: "게시물 29.7만",
-      },
-    },
-    {
-      position: 4,
-      hashtag: {
-        name: "성산맛집",
-        id: 17842666063030862,
-        media_count: 790113,
-        use_default_avatar: true,
-        search_result_subtitle: "게시물 79만",
-      },
-    },
-    {
-      position: 5,
-      hashtag: {
-        name: "성수카페",
-        id: 17843727766013830,
-        media_count: 675854,
-        use_default_avatar: true,
-        search_result_subtitle: "게시물 67.5만",
-      },
-    },
-  ];
+  //   const data = [
+  //     {
+  //       position: 0,
+  //       hashtag: {
+  //         name: "성수동맛집",
+  //         id: 17841557776105378,
+  //         media_count: 812269,
+  //         use_default_avatar: true,
+  //         search_result_subtitle: "게시물 81.2만",
+  //       },
+  //     },
+  //     {
+  //       position: 1,
+  //       hashtag: {
+  //         name: "성수맛집",
+  //         id: 17843798476031726,
+  //         media_count: 717947,
+  //         use_default_avatar: true,
+  //         search_result_subtitle: "게시물 71.7만",
+  //       },
+  //     },
+  //     {
+  //       position: 2,
+  //       hashtag: {
+  //         name: "성수동카페",
+  //         id: 17843645044031416,
+  //         media_count: 1146282,
+  //         use_default_avatar: true,
+  //         search_result_subtitle: "게시물 114만",
+  //       },
+  //     },
+  //     {
+  //       position: 3,
+  //       hashtag: {
+  //         name: "성신여대맛집",
+  //         id: 17841564262085452,
+  //         media_count: 297709,
+  //         use_default_avatar: true,
+  //         search_result_subtitle: "게시물 29.7만",
+  //       },
+  //     },
+  //     {
+  //       position: 4,
+  //       hashtag: {
+  //         name: "성산맛집",
+  //         id: 17842666063030862,
+  //         media_count: 790113,
+  //         use_default_avatar: true,
+  //         search_result_subtitle: "게시물 79만",
+  //       },
+  //     },
+  //     {
+  //       position: 5,
+  //       hashtag: {
+  //         name: "성수카페",
+  //         id: 17843727766013830,
+  //         media_count: 675854,
+  //         use_default_avatar: true,
+  //         search_result_subtitle: "게시물 67.5만",
+  //       },
+  //     },
+  //   ];
 
   return (
     <>
@@ -119,7 +123,7 @@ export const MainPage: React.FC = () => {
           검색
         </button>
         <div className="search-list">
-          {data.flatMap((searchListData) => (
+          {/* {data.flatMap((searchListData) => (
             <>
               <div
                 key={searchListData.hashtag.id}
@@ -130,7 +134,7 @@ export const MainPage: React.FC = () => {
                 <div className="item-right">{searchListData.hashtag.search_result_subtitle}</div>
               </div>
             </>
-          ))}
+          ))} */}
         </div>
       </div>
       <p className="read-the-docs">Made by OMT Labs</p>
